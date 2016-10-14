@@ -1,0 +1,14 @@
+.article-section{
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+}
+.article{
+	// display: flex;
+	background-size: contain;
+	background-position: 50%;
+	// background-repeat: no-repeat;
+	// align-items: flex-end;
+	width: 25%;
+	height: 400px;
+}

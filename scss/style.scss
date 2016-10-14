@@ -1,20 +1,14 @@
-@import 'variables';
-// @import 'scss/mixins';
-@import 'reset';// css reset
- // @import 'scss/font';
+@import 'variable'; 
+@import 'mixins';
+// @import 'reset';// css reset
+// @import 'scss/font';
 @import 'body';
+@import 'articles';
 // @import 'scss/header';
 // @import 'scss/photo-grid';
-@import 'scss/footer';
+@import 'footer';
 
-.article-insertion{
-	display: flex
-	justify-content: space-between;
-}
-.article{
-	display: flex;
-	
-}
+
 
 
 footer{
