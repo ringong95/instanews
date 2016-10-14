@@ -1,0 +1,23 @@
+
+.main{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-flow: column wrap;
+	margin-top: 5%;
+
+	body &{
+		font-size: 16px;
+		font-family: $font, sans-serif;
+		background-color: black;
+	}
+	@include tablet{
+		flex-flow: row nowrap;
+		margin-top: 15%;
+	}
+	@include desktop{
+		justify-content: flex-start;
+	}
+}
