@@ -15,31 +15,26 @@ $("#dropdown").change(function(){
 // comments
 .done(function(data){
 	var htmladdition = "<div class='article' style='background:url(";
-	var htmlendaddition = "')'</p></div>";
+	var htmlendaddition = "')'</a></div>";
 	var info = [];
 
-	// for (var i = 0; info.length=== 12; i++){
-		 info = $(data.results).filter(function(key,value){
-		 	
-			return $(value.multimedia).length!=0;
+	info = $(data.results).filter(function(key,value){
 
-		})
-		 console.log(info)
-		// }
+		return $(value.multimedia).length>=5;
 
-console.log(info)
-		$.each(data.results, function(key,value){
-			// console.log(value.multimedia.length)
-			if(value.multimedia.length ==0)
-			{}
-		else{
-			var image = value.multimedia[4].url;
-			var text = value.abstract
-			$('.article-section').append(htmladdition+image+"'><p>"+text+htmlendaddition);
+	})
+	
+	info.splice (12);
+	console.log(info)
+	
+	$.each(info, function(key,value){
+		var image = value.multimedia[4].url;
+		var text = value.abstract
+		$('.article-section').append(htmladdition+image+"'><p>"+text+htmlendaddition);
 				// $('.article-insertion').append("<p>"+text +"</p></div>");
-			}
-		});
-	});
+
+			});
+});
 
 
 

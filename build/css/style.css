@@ -12,7 +12,6 @@ body {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
   margin-top: 5%; }
