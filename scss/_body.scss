@@ -4,25 +4,36 @@
 		background-color: black;
 		color: white;
 		text-decoration: none;
-		
+
 	}
 	
+	.wrapper{
+		display: flex;
+		flex-flow: column wrap;
+	}
+
 	.main{
-		text-align: center;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	
 		flex-flow: column wrap;
-		margin-top: 5%;
-
-		
-		
+		height: 600px;
+	
 		@include tablet{
 			flex-flow: row nowrap;
-			margin-top: 15%;
+	
 		}
 		@include desktop{
 			justify-content: flex-start;
 		}
+	}
+
+	.shrunkheader{
+		height: auto;
+		img {
+			height: 100px;
+		}
+		justify-content: center;
+		flex-flow: row nowrap;
+		padding: 25px;
 	}

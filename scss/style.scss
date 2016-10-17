@@ -1,6 +1,6 @@
 @import 'variable'; 
 @import 'mixins';
-// @import 'reset';// css reset
+@import 'reset';
 // @import 'scss/font';
 @import 'body';
 @import 'articles';
@@ -10,25 +10,3 @@
 
 
 
-
-footer{
-	color: #c2c2c2;
-	display: flex;
-	justify-content: center;
-	align-self: flex-end;
-	margin-top: 60%;
-}
-@media screen and (min-width: 600px){
-	
-	footer{
-		margin-top: 35%;
-	}
-}
-@media screen and (min-width: 1000px){
-
-	footer{
-		/*margin-left: 1%;*/
-		margin-top: 15%;
-		justify-content: flex-start;
-	}
-}

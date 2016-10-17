@@ -3,5 +3,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-self: flex-end;
-	margin-top: 60%;
+	@include desktop{
+		justify-content: flex-start;
+	}
 }
