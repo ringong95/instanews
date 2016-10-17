@@ -12,9 +12,9 @@
     "quotes": [ 1, "single"]
   },
   "globals": {
-    "jQuery": false,
-    "$": false,
-    "_": false
+    "jQuery": true,
+    "$": true,
+    "_": true
   },
   "env": {
     "browser": true

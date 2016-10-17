@@ -1,16 +1,23 @@
 	body  {
 		font-size: 16px;
-		// font-family: $font, sans-serif;
+		font-family: $font, sans-serif;
+		font-weight: light;
 		background-color: black;
+		background-size: cover;
 		color: white;
 		text-decoration: none;
-
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 	
 	.wrapper{
 		display: flex;
 		flex-flow: column wrap;
+		p{
+			padding: 10px;	
+		}
 	}
+
 
 	.main{
 		display: flex;
@@ -18,10 +25,10 @@
 		align-items: center;
 		flex-flow: column wrap;
 		height: 600px;
-	
+		transition: 1s;
 		@include tablet{
 			flex-flow: row nowrap;
-	
+
 		}
 		@include desktop{
 			justify-content: flex-start;
@@ -29,12 +36,11 @@
 	}
 
 	.shrunkheader{
+		transition: 1s ease;
 		height: auto;
 		img {
 			height: 100px;
 		}
-		justify-content: center;
-		flex-flow: row nowrap;
 		padding: 25px;
 		@include tablet{
 			justify-content: flex-start;

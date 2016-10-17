@@ -1,9 +1,10 @@
 @import 'variable'; 
 @import 'mixins';
 @import 'reset';
-// @import 'scss/font';
+@import 'font';
 @import 'body';
 @import 'articles';
+@import 'loader';
 // @import 'scss/header';
 // @import 'scss/photo-grid';
 @import 'footer';
