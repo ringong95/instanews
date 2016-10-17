@@ -3,14 +3,14 @@
 	justify-content: flex-start;
 	flex-flow: row wrap;
 	li{
-			width: 100%;
-			@include tablet{
-				width: 50%;
-			}
-			@include desktop{
-				width: 25%;
-			}
-		}	
+		width: 100%;
+		@include tablet{
+			width: 50%;
+		}
+		@include desktop{
+			width: 25%;
+		}
+	}	
 	
 	.article{
 		background-size: cover;
@@ -19,6 +19,14 @@
 		display: flex;
 		align-items: flex-end;
 		padding: 5px;
+		&:hover {
+			.abstractpart{
+				p{
+					margin-top: 0px;
+
+				}
+			}
+		}
 		.abstractpart{
 			font-family: 1rem;
 			
@@ -28,14 +36,13 @@
 			height: 100px;
 			color: white;
 			// padding: 20px;
-			&:hover p{
-				margin-top: 50px;
-			}
+			padding: .5rem;
 			p {
+				height: auto;
 				transition: 1s;
 				background-color:rgba(0,0,0,.5);
-				margin-top: 100px;
-				padding: .5rem;
+				margin-top: 45%;
+				
 			}
 		}
 	}

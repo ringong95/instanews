@@ -36,4 +36,7 @@
 		justify-content: center;
 		flex-flow: row nowrap;
 		padding: 25px;
+		@include tablet{
+			justify-content: flex-start;
+		}
 	}

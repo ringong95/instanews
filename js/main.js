@@ -1,5 +1,8 @@
 $( document ).ready(function() {
-	$('#dropdown').change(function(){
+	$('#dropdown').heapbox()
+
+	$('#dropdown').heapbox().change(function(){
+		console.log("hope")
 		var input = $('select').val()
 		var url = 'https://api.nytimes.com/svc/topstories/v2/'+input+'.json';
 		$('.article-section').empty();
