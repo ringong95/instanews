@@ -5,7 +5,7 @@
 		background-color: black;
 		background-size: cover;
 		color: white;
-		text-decoration: none;
+		
 		max-width: 1600px;
 		margin: 0 auto;
 	}
@@ -37,6 +37,7 @@
 
 	.shrunkheader{
 		transition: 1s ease;
+		height: 150px;
 		height: auto;
 		img {
 			height: 100px;
