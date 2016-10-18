@@ -36,6 +36,7 @@
 	}
 
 	.shrunkheader{
+		// adding this class in after forces the header to change into the new sizes in one clean manner
 		transition: 1s ease;
 		height: 150px;
 		height: auto;
