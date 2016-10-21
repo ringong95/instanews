@@ -16,8 +16,11 @@
 		@include desktop{
 			width: 25%;
 		}
-	}	
-}	
+		a {
+			text-decoration: none;
+		}
+	}
+}
 .article{
 	width: 100%;
 	height: 400px;
@@ -38,27 +41,23 @@
 	.abstractpart{
 		font-family: 1rem;
 			overflow: hidden; // This hides the pushed out text so it doesnt look janky as shit
-			
+
 			width: 100%;
 			height: 40%; // this method requires the parent of hte text to have a set dimensions or it wont work
 			color: white;
 			// padding: 20px;
-			
+
 
 			p {
 				// height: auto;
 				margin-left: 10px;
 				padding-top: 10px;
 				transition: all 1s;
-				text-decoration: none;
-				margin-top: 100%; //This margin moves it out of view orignally 
-				
+				margin-top: 100%; //This margin moves it out of view orignally
+
 			}
 		}
 	}
 	.article-wrapper{
 		display: none;
 	}
-
-
-
