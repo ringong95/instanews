@@ -40,7 +40,7 @@
 		}
 	}
 	.abstractpart{
-		font-family: 1rem;
+			font-family: 1rem;
 			overflow: hidden; // This hides the pushed out text so it doesnt look janky as shit
 
 			width: 100%;
@@ -53,16 +53,11 @@
 				// height: auto;
 				margin-left: 10px;
 				padding-top: 10px;
-<<<<<<< HEAD
 				transition: all 1s; // this tells it how long i want it to take
 				text-decoration: none;
 				margin-top: 100%; //This margin moves it out of view orignally 
-				
-=======
 				transition: all 1s;
 				margin-top: 100%; //This margin moves it out of view orignally
-
->>>>>>> 635bac7b13069c51bb9f109084d26020d9e04861
 			}
 		}
 	}
