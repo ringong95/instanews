@@ -17,8 +17,11 @@
 		@include desktop{
 			width: 25%;
 		}
-	}	
-}	
+		a {
+			text-decoration: none;
+		}
+	}
+}
 .article{
 	width: 100%;
 	height: 400px;
@@ -39,27 +42,30 @@
 	.abstractpart{
 		font-family: 1rem;
 			overflow: hidden; // This hides the pushed out text so it doesnt look janky as shit
-			
+
 			width: 100%;
 			height: 40%; // this method requires the parent of hte text to have a set dimensions or it wont work
 			color: white;
 			// padding: 20px;
-			
+
 
 			p {
 				// height: auto;
 				margin-left: 10px;
 				padding-top: 10px;
+<<<<<<< HEAD
 				transition: all 1s; // this tells it how long i want it to take
 				text-decoration: none;
 				margin-top: 100%; //This margin moves it out of view orignally 
 				
+=======
+				transition: all 1s;
+				margin-top: 100%; //This margin moves it out of view orignally
+
+>>>>>>> 635bac7b13069c51bb9f109084d26020d9e04861
 			}
 		}
 	}
 	.article-wrapper{
 		display: none;
 	}
-
-
-
